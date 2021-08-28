@@ -160,7 +160,7 @@ def deleate_folder(folder: Path):
 
 
 def main(folder):
-    folder = Path('D:\Python\Test\\trash')
+    folder = Path(folder)
     scan(folder)
 
     for file in IMAGES:
@@ -187,6 +187,7 @@ def main(folder):
 
 if __name__ == '__main__':
 
-    sort_folder = Path('D:\Python\Test\\trash')
+    input_arg = input('Enter the directory for sorting ')
+    sort_folder = Path(input_arg)
 
     main(sort_folder)
